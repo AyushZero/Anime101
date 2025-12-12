@@ -1,0 +1,61 @@
+{
+  "title": "ANIME 101",
+  "author": "Zero",
+  "categories": [
+    {
+      "name": "Kore wa dare",
+      "questions": [
+        { "points": 100, "question": "", "answer": "", "image": "" },
+        { "points": 200, "question": "", "answer": "", "image": "" },
+        { "points": 300, "question": "", "answer": "", "image": "" },
+        { "points": 400, "question": "", "answer": "", "image": "" },
+        { "points": 500, "question": "", "answer": "", "image": "" },
+        { "points": 1000, "question": "", "answer": "", "image": "" }
+      ]
+    },
+    {
+      "name": "2D Cast",
+      "questions": [
+        { "points": 100, "question": "", "answer": "", "image": "" },
+        { "points": 200, "question": "", "answer": "", "image": "" },
+        { "points": 300, "question": "", "answer": "", "image": "" },
+        { "points": 400, "question": "", "answer": "", "image": "" },
+        { "points": 500, "question": "", "answer": "", "image": "" },
+        { "points": 1000, "question": "", "answer": "", "image": "" }
+      ]
+    },
+    {
+      "name": "Zoomed In",
+      "questions": [
+        { "points": 100, "question": "", "answer": "", "image": "" },
+        { "points": 200, "question": "", "answer": "", "image": "" },
+        { "points": 300, "question": "", "answer": "", "image": "" },
+        { "points": 400, "question": "", "answer": "", "image": "" },
+        { "points": 500, "question": "", "answer": "", "image": "" },
+        { "points": 1000, "question": "", "answer": "", "image": "" }
+      ]
+    },
+    {
+      "name": "Tags",
+      "questions": [
+        { "points": 100, "question": "", "answer": "", "image": "" },
+        { "points": 200, "question": "", "answer": "", "image": "" },
+        { "points": 300, "question": "", "answer": "", "image": "" },
+        { "points": 400, "question": "", "answer": "", "image": "" },
+        { "points": 500, "question": "", "answer": "", "image": "" },
+        { "points": 1000, "question": "", "answer": "", "image": "" }
+      ]
+    },
+    {
+      "name": "Nihon",
+      "questions": [
+        { "points": 100, "question": "", "answer": "", "image": "" },
+        { "points": 200, "question": "", "answer": "", "image": "" },
+        { "points": 300, "question": "", "answer": "", "image": "" },
+        { "points": 400, "question": "", "answer": "", "image": "" },
+        { "points": 500, "question": "", "answer": "", "image": "" },
+        { "points": 1000, "question": "", "answer": "", "image": "" }
+      ]
+    }
+  ]
+}

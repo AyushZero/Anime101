@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeopardy Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="start-screen" class="screen">
+        <div class="title-container">
+            <h1 id="quiz-title"></h1>
+            <p id="quiz-author"></p>
+        </div>
+        <button id="start-btn" class="start-button">START</button>
+    </div>
+
+    <div id="game-screen" class="screen hidden">
+        <div class="jeopardy-board">
+            <div class="categories-row" id="categories"></div>
+            <div class="questions-grid" id="questions-grid"></div>
+        </div>
+    </div>
+
+    <div id="question-screen" class="screen hidden">
+        <div class="question-container">
+            <div class="question-header">
+                <h2 id="question-category"></h2>
+                <h3 id="question-points"></h3>
+            </div>
+            <div class="question-content">
+                <p id="question-text"></p>
+            </div>
+            <div id="answer-container" class="answer-content hidden">
+                <h3>Answer:</h3>
+                <p id="answer-text"></p>
+            </div>
+            <button id="reveal-btn" class="action-button" onclick="handleRevealClick()">REVEAL ANSWER</button>
+        </div>
+    </div>
+
+    <div id="final-jeopardy-screen" class="screen hidden">
+        <div class="final-jeopardy-container">
+            <h1>Final Jeopardy</h1>
+            <p>Category: <span id="final-category"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

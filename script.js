@@ -169,6 +169,7 @@ function showQuestionScreen() {
     const revealBtn = document.getElementById('reveal-btn');
     revealBtn.textContent = 'REVEAL ANSWER';
     revealBtn.classList.remove('confirm');
+    revealBtn.onclick = handleRevealClick;
     revealClickCount = 0;
     
     // Hide answer initially

@@ -9,7 +9,6 @@
         { "points": 200, "question": "", "answer": "", "image": "" },
         { "points": 300, "question": "", "answer": "", "image": "" },
         { "points": 400, "question": "", "answer": "", "image": "" },
-        { "points": 500, "question": "", "answer": "", "image": "" },
         { "points": 1000, "question": "", "answer": "", "image": "" }
       ]
     },
@@ -20,7 +19,6 @@
         { "points": 200, "question": "", "answer": "", "image": "" },
         { "points": 300, "question": "", "answer": "", "image": "" },
         { "points": 400, "question": "", "answer": "", "image": "" },
-        { "points": 500, "question": "", "answer": "", "image": "" },
         { "points": 1000, "question": "", "answer": "", "image": "" }
       ]
     },
@@ -31,7 +29,6 @@
         { "points": 200, "question": "", "answer": "", "image": "" },
         { "points": 300, "question": "", "answer": "", "image": "" },
         { "points": 400, "question": "", "answer": "", "image": "" },
-        { "points": 500, "question": "", "answer": "", "image": "" },
         { "points": 1000, "question": "", "answer": "", "image": "" }
       ]
     },
@@ -42,7 +39,6 @@
         { "points": 200, "question": "", "answer": "", "image": "" },
         { "points": 300, "question": "", "answer": "", "image": "" },
         { "points": 400, "question": "", "answer": "", "image": "" },
-        { "points": 500, "question": "", "answer": "", "image": "" },
         { "points": 1000, "question": "", "answer": "", "image": "" }
       ]
     },
@@ -53,9 +49,14 @@
         { "points": 200, "question": "", "answer": "", "image": "" },
         { "points": 300, "question": "", "answer": "", "image": "" },
         { "points": 400, "question": "", "answer": "", "image": "" },
-        { "points": 500, "question": "", "answer": "", "image": "" },
         { "points": 1000, "question": "", "answer": "", "image": "" }
       ]
     }
-  ]
+  ],
+  "finalJeopardy": {
+    "category": "Final Jeopardy",
+    "question": "",
+    "answer": "",
+    "image": ""
+  }
 }

@@ -1,68 +1,18 @@
-// Quiz data - edit this to change quiz content
-const quizData = {
-    "title": "ANIME 101",
-    "author": "Zero",
-    "categories": [
-        {
-            "name": "Kore wa dare",
-            "questions": [
-                { "points": 100, "question": "", "answer": "", "image": "" },
-                { "points": 200, "question": "", "answer": "", "image": "" },
-                { "points": 300, "question": "", "answer": "", "image": "" },
-                { "points": 400, "question": "", "answer": "", "image": "" },
-                { "points": 1000, "question": "", "answer": "", "image": "" }
-            ]
-        },
-        {
-            "name": "2D Cast",
-            "questions": [
-                { "points": 100, "question": "", "answer": "", "image": "" },
-                { "points": 200, "question": "", "answer": "", "image": "" },
-                { "points": 300, "question": "", "answer": "", "image": "" },
-                { "points": 400, "question": "", "answer": "", "image": "" },
-                { "points": 1000, "question": "", "answer": "", "image": "" }
-            ]
-        },
-        {
-            "name": "Zoomed In",
-            "questions": [
-                { "points": 100, "question": "", "answer": "", "image": "" },
-                { "points": 200, "question": "", "answer": "", "image": "" },
-                { "points": 300, "question": "", "answer": "", "image": "" },
-                { "points": 400, "question": "", "answer": "", "image": "" },
-                { "points": 1000, "question": "", "answer": "", "image": "" }
-            ]
-        },
-        {
-            "name": "Tags",
-            "questions": [
-                { "points": 100, "question": "", "answer": "", "image": "" },
-                { "points": 200, "question": "", "answer": "", "image": "" },
-                { "points": 300, "question": "", "answer": "", "image": "" },
-                { "points": 400, "question": "", "answer": "", "image": "" },
-                { "points": 1000, "question": "", "answer": "", "image": "" }
-            ]
-        },
-        {
-            "name": "Nihon",
-            "questions": [
-                { "points": 100, "question": "", "answer": "", "image": "" },
-                { "points": 200, "question": "", "answer": "", "image": "" },
-                { "points": 300, "question": "", "answer": "", "image": "" },
-                { "points": 400, "question": "", "answer": "", "image": "" },
-                { "points": 1000, "question": "", "answer": "", "image": "" }
-            ]
-        }
-    ],
-    "finalJeopardy": {
-        "category": "Final Jeopardy",
-        "question": "",
-        "answer": "",
-        "image": ""
-    }
-};
-
+// Quiz data - loaded from quizData.json
+let quizData = null;
 let clickCount = 0;
+
+// Load quiz data from JSON file
+async function loadQuizData() {
+    try {
+        const response = await fetch('quizData.json');
+        quizData = await response.json();
+        initializeStartScreen();
+    } catch (error) {
+        console.error('Error loading quiz data:', error);
+        alert('Error loading quiz data. Please make sure quizData.json exists.');
+    }
+}
 
 // Initialize start screen
 function initializeStartScreen() {
@@ -73,26 +23,9 @@ function initializeStartScreen() {
     startBtn.addEventListener('click', handleStartClick);
 }
 
-// Handle start button click (requires two clicks to confirm)
+// Handle start button click (single click to start)
 function handleStartClick() {
-    const startBtn = document.getElementById('start-btn');
-    clickCount++;
-    
-    if (clickCount === 1) {
-        startBtn.textContent = 'CONFIRM?';
-        startBtn.classList.add('confirm');
-        
-        // Reset if user doesn't click again within 3 seconds
-        setTimeout(() => {
-            if (clickCount === 1) {
-                startBtn.textContent = 'START';
-                startBtn.classList.remove('confirm');
-                clickCount = 0;
-            }
-        }, 3000);
-    } else if (clickCount === 2) {
-        startGame();
-    }
+    startGame();
 }
 
 // Start the game
@@ -226,4 +159,4 @@ function showFinalJeopardy() {
 }
 
 // Initialize when page loads
-initializeStartScreen();
+loadQuizData();
